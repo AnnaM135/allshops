@@ -52,7 +52,7 @@ function Login({ currentModal, setCurrentModal }) {
             </svg> My Account
         </a>
         <Modal show = {show} id="modal_login">
-            <div ref = {modalClose} className="modal-register"> 
+            <div c className="modal-register"> 
                 <div className="modal_btn">
                     <button
                     className="close"

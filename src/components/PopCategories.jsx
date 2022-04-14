@@ -50,27 +50,35 @@ function PopCategories() {
                     <div className='product__categories'>
                         <div className="product__category">
                             <img src={product1} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product2} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product3} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product4} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product5} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product6} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product1} alt="product" />
+                            <p>Category</p>
                         </div>
                         <div className="product__category">
                             <img src={product2} alt="product" />
+                            <p>Category</p>
                         </div>
                     </div>
                 </div>

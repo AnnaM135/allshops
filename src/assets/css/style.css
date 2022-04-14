@@ -1583,6 +1583,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .main_menu nav > ul > li:first-child > a {
   padding-left: 0;
 }
+
+.main_menu nav > ul > li:last-child > a {
+  padding-right: 0;
+}
 .main_menu nav > ul > li > a {
   display: block;
   padding: 14px 20px 14px 20px;
@@ -1591,6 +1595,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Lato", sans-serif;
+}
+
+.main_menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main_menu nav > ul > li > a {
@@ -1822,7 +1832,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #fff;
   display: inline-block;
   position: absolute;
-  right: 20px;
+  right: 7px;
   top: 50%;
   width: 15px;
   height: 10px;
@@ -11582,6 +11592,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   object-fit: contain;
   padding: 20px;
 }
+.product__brands p, .product__category p{
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+
+}
 
 /* Location */
 .locationState{
@@ -11757,19 +11774,24 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .post__panel{
   width: 200px;
   height: 200px;
+  cursor: pointer;
 }
 
 .post__panel > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
-
+.post__panel img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .media__contacts{
   position: absolute;
   left: 50%;
   top: 65px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 730px; 
   height: 270px;
   background: rgba(255, 255, 255, 0.85); 
@@ -11822,4 +11844,27 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .media__contacts{
     width: 200px;
   }
+}
+
+
+/* modal timeout */
+.modal-first{
+  width: 1100px !important;
+  height: 100%;   
+}
+.modal__inside{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__imgZone{
+  width: 520px;
+  height: 555px;
+  border-radius: 10px 0px 0px 10px;
+}
+.modal__imgZone > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

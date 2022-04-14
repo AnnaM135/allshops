@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from "react";
 
 import BannerProduct from '../components/BannerProduct';
 import BannerSingle from '../components/BannerSingle';
@@ -12,11 +12,24 @@ import PopBrands from '../components/PopBrands';
 import PopCategories from '../components/PopCategories';
 import PopProducts from '../components/PopProducts';
 import Shipping from '../components/Shipping';
+import SubscribeModal from "../modals/SubscribeModal";
 
 function Home() {
-
+  const [isWarningModalOpen, setWarningModalOpen] = useState(false);
+  useEffect(() => {
+     setTimeout(()=>{ 
+      setWarningModalOpen(true);
+    },5000)
+  }, [isWarningModalOpen])
   return (
     <div>
+      {isWarningModalOpen && (
+        <SubscribeModal 
+          isOpen={isWarningModalOpen}
+          onRequestClose={() => setWarningModalOpen(false)}
+        />
+        )
+      }
         <MainSlider />
         <Shipping />
         <PopCategories />
