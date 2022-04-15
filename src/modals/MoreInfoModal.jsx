@@ -24,7 +24,7 @@ function MoreInfoModal({ setCurrentModal }) {
                             <p className="modal_info_name">Dear Alex</p>
                             <p className="modal_info_title">Before you start shopping, please fill in these fields</p>
                             <div className="modal_info_area">
-                            <img src={profPic} alt="profilePic" />
+                            <img src={profPic} alt="profilePic" onClick={() => setCurrentModal(8)}/>
                             <input type="file" id="modal_upload" />
                             <label className="modal_upload_text" for="modal_upload">Upload image</label>
                             <form action="" className="modal-form more_info_form">

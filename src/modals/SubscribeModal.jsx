@@ -19,42 +19,37 @@ function SubscribeModal({isOpen, onRequestClose}) {
 
   return (
     <div>
-        <Modal show={isOpen}  >
-                <div ref = {modalClose} className="modal-first">
-                    <div className="modal_btn">
-                        <button
-                        type="button"
-                        className="close"
-                        onClick={onRequestClose}
-                    >
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                <div className="modal_body">
-                    <div className="row modal__inside">
-                        <div className="modal__imgZone">
-                            <img src={subscribeImg} alt="subscribeImg" />
-                        </div>
-                        <div className="modal__subscribe">
-                            <div className="modal_tab">
-                            <div className="modal-top-nav">
-                                <img className="modal-reset-logo" src={logo} alt="logo" />
-                            </div>
-                            </div>
-                            <div className="modal-reset">
-                                <p className="modal-reset-title">Reset Password</p>
-                                <p className="modal-reset-text">Enter your email address</p>
-                                <div className="modal-form">
-                                    <input type="email" placeholder="Email adress" />
-                                    <button data-bs-target="#modal_reset_success">Submit</button>
-                                </div>
+      <Modal
+        show={isOpen}
+        contentLabel="Example Modal"
+        className="modal__sub"
+      >
+        <div className="modal_btn2">
+            <button type="button" onClick={onRequestClose} className="close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div ref={modalClose} className='modal__inside'>
+            <div className="modal__imgZone">
+                <img src={subscribeImg} alt="subscribeImg" />
+            </div>
+            <div className="modal__subscribe">
+                <div className="modal-top-nav">
+                    <img className="modal-sub-logo" src={logo} alt="logo" />
+                </div>
+                        <div className="modal-sub">
+                            <p className="modal-sub-title">JOIN US NOW</p>
+                            <p className="modal-sub-text">And get hot news about the theme</p>
+                            <div className="modal-form">
+                                 <input type="email" placeholder="Enter Your Email" />
+                                <button data-bs-target="#modal_reset_success">Subscribe</button>
+                                <label htmlFor="" className='modal-sub-label'>
+                                    <input type="checkbox" className='modal-sub-checkbox'/>
+                                    Don’t show this popup again
+                                </label>
                             </div>
                         </div>
-                       
-                    </div>
-                </div>
-                </div>
-        </Modal>
+            </div>
+        </div>
+      </Modal>
     </div>
   )
 }

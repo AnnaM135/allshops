@@ -16,9 +16,11 @@ import SubscribeModal from "../modals/SubscribeModal";
 
 function Home() {
   const [isWarningModalOpen, setWarningModalOpen] = useState(false);
+
   useEffect(() => {
      setTimeout(()=>{ 
-      setWarningModalOpen(true);
+     // setWarningModalOpen(true);
+      console.log("ok");
     },5000)
   }, [isWarningModalOpen])
   return (

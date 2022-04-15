@@ -15,6 +15,7 @@ import GoBackModal from '../modals/GoBackModal';
 import SuccessModal from '../modals/SuccessModal';
 import MoreInfoModal from '../modals/MoreInfoModal';
 import LocationModal from '../modals/LocationModal';
+import CropEasy from './crop/CropEasy';
 
 function Header() {
 
@@ -187,6 +188,7 @@ function Header() {
                                             {currentModal === 5 && <GoBackModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
                                             {currentModal === 6 && <MoreInfoModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
                                             {currentModal === 7 && <LoginTrue currentModal = {currentModal} setCurrentModal = {setCurrentModal}/>}
+                                            {currentModal === 8 && <CropEasy currentModal = {currentModal} setCurrentModal = {setCurrentModal}/>}
                                         </li>
                                     </ul>
                                 </div>
