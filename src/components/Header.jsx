@@ -15,7 +15,7 @@ import GoBackModal from '../modals/GoBackModal';
 import SuccessModal from '../modals/SuccessModal';
 import MoreInfoModal from '../modals/MoreInfoModal';
 import LocationModal from '../modals/LocationModal';
-import CropEasy from './crop/CropEasy';
+import CropEasy from './crop/CropEasy.js';
 
 function Header() {
 

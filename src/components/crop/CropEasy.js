@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import {Modal} from "react-bootstrap";
 import Cropper from 'react-easy-crop';
-import profPic from "../../assets/img/user_prof_pic.png"
-
+// import profPic from "../../assets/img/user_prof_pic.png"
+import profPic from "../../assets/img/icon/cropperImg.png";
+import zoomImg from "../../assets/img/icon/Img_box_fill.svg";
 
 const CropEasy =  ({ setCurrentModal }) => {
     const [crop, setCrop] = useState({ x: 0, y: 0 })
@@ -10,7 +11,7 @@ const CropEasy =  ({ setCurrentModal }) => {
     const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
         console.log(croppedArea, croppedAreaPixels)
     }, [])
-    const [show, setShow] = useState(true)
+    const [show] = useState(true)
   return (
     <Modal show={show} className="crop__picture modal_info">
         <div className="modal_btn">
@@ -24,7 +25,7 @@ const CropEasy =  ({ setCurrentModal }) => {
                     </div>
       <div className="crop-container">
         <Cropper
-          image="https://img.huffingtonpost.com/asset/5ab4d4ac2000007d06eb2c56.jpeg?cache=sih0jwle4e&ops=1910_1000"
+          image={profPic}
           crop={crop}
           zoom={zoom}
           aspect={4 / 3}
@@ -32,8 +33,8 @@ const CropEasy =  ({ setCurrentModal }) => {
           onCropComplete={onCropComplete}
           onZoomChange={setZoom}
         />
-      </div>
       <div className="controls">
+      <img src={zoomImg} alt="zoomIcon"/>
         <input
           type="range"
           value={zoom}
@@ -46,6 +47,9 @@ const CropEasy =  ({ setCurrentModal }) => {
           }}
           className="zoom-range"
         />
+        <img src={zoomImg} alt="zoomIcon"/>
+      </div>
+      <button className="crop__btn">Save</button>
       </div>
     </Modal>
   )

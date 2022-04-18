@@ -18,11 +18,13 @@ function Home() {
   const [isWarningModalOpen, setWarningModalOpen] = useState(false);
 
   useEffect(() => {
-     setTimeout(()=>{ 
-     // setWarningModalOpen(true);
+    setTimeout(()=>{ 
+     setWarningModalOpen(true);
       console.log("ok");
     },5000)
-  }, [isWarningModalOpen])
+
+  }, [])
+  
   return (
     <div>
       {isWarningModalOpen && (
