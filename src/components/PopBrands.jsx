@@ -20,35 +20,35 @@ function PopBrands() {
                         </h2>
                     </div>
                     <div className='product__categories'>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product1} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product2} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product3} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product4} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product5} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product6} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product1} alt="product" />
                             <p>Pop Brands</p>
                         </div>
-                        <div className="product__brands">
+                        <div className="product__brands product__category">
                             <img src={product2} alt="product" />
                             <p>Pop Brands</p>
                         </div>

@@ -250,7 +250,7 @@ function Header() {
                                         <span className="wishlist_quantity">3</span>
                                     </div>
                                     <div className="header_wishlist">
-                                        <Link to = "/wishlist">
+                                        <Link to = "/compare">
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="36" fill="currentColor" className="bi bi-arrow-repeat" viewBox="0 0 16 16">
                                                     <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
@@ -262,7 +262,7 @@ function Header() {
                                         <span className="wishlist_quantity">3</span>
                                     </div>
                                     <div className="header_wishlist">
-                                        <Link to = "/wishlist">
+                                        <Link to = "/cart">
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="currentColor" className="bi bi-cart3" viewBox="0 0 16 16">
                                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
@@ -727,7 +727,17 @@ function Header() {
                         data-bs-toggle="modal"
                         data-bs-target="#modal_login"
                     >
-                        <a><i className="ion-android-person"></i> My Account</a>
+                        <a><i className="ion-android-person"></i>
+                            {currentModal === 1 && <Login currentModal = {currentModal} setCurrentModal = {setCurrentModal}/>}
+                            {currentModal === 2 && <Register currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
+                            {currentModal === 3 && <Reset currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
+                            {/* {currentModal === 4 && <SuccessModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />} */}
+                            {currentModal === 4 && <ChangePassModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
+                            {currentModal === 5 && <GoBackModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
+                            {currentModal === 6 && <MoreInfoModal currentModal = {currentModal} setCurrentModal = {setCurrentModal} />}
+                            {currentModal === 7 && <LoginTrue currentModal = {currentModal} setCurrentModal = {setCurrentModal}/>}
+                            {currentModal === 8 && <CropEasy currentModal = {currentModal} setCurrentModal = {setCurrentModal}/>}
+                        </a>
                     </li>
                     <li className="language">
                         <a href="index-5.html#"

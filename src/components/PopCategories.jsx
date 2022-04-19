@@ -48,35 +48,35 @@ function PopCategories() {
                         </h2>
                     </div>
                     <div className='product__categories'>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product1} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product2} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product3} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product4} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product5} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product6} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product1} alt="product" />
                             <p>Category</p>
                         </div>
-                        <div className="product__category">
+                        <div className="product__category product__category-color">
                             <img src={product2} alt="product" />
                             <p>Category</p>
                         </div>
